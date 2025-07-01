@@ -1,0 +1,23 @@
+
+<table class="table striped">
+
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Fee</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+
+    <tr *ngFor="let s of students | async">
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.email}}</td>
+        <td>{{s.fee}}</td>
+        <td></td>
+    </tr>
+
+
+</table>
